@@ -33,7 +33,7 @@ public class UserMapper {
         return userResponse;
     }
 
-    public User mapToUser(UserRequest userRequest) {
+    public User mapToUserEntity(UserRequest userRequest) {
         User user = new User();
         user.setFirstName(userRequest.getFirstName());
         user.setLastName(userRequest.getLastName());

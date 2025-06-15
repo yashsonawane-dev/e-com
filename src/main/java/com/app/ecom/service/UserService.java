@@ -27,7 +27,7 @@ public class UserService {
     }
 
     public void addUser(UserRequest userRequest) {
-        User user = userMapper.mapToUser(userRequest);
+        User user = userMapper.mapToUserEntity(userRequest);
         userRepository.save(user);
     }
 
